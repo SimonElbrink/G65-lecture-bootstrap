@@ -17,7 +17,43 @@
       crossorigin="anonymous"
     ></script>
   </head>
+
+  <!--https://getbootstrap.com/docs/5.3/layout/grid/-->
+  <!--https://www.w3schools.com/bootstrap5/bootstrap_grid_system.php-->
+
   <body>
+    <div class="container-fluid my-3">
+      <h1>Basic Grid Structure</h1>
+      <p>Resize the browser window to see the effect.</p>
+      <ul>
+        <li>
+          <code class="w3-codespan">.col-</code> (tiny devices—screen width less
+          than 576 px)
+        </li>
+        <li>
+          <code class="w3-codespan">.col-sm-</code> (small devices—screen width
+          equal to or greater than 576 px)
+        </li>
+        <li>
+          <code class="w3-codespan">.col-md-</code> (medium devices—screen width
+          equal to or greater than 768 px)
+        </li>
+        <li>
+          <code class="w3-codespan">.col-lg-</code> (large devices—screen width
+          equal to or greater than 992 px)
+        </li>
+        <li>
+          <code class="w3-codespan">.col-xl-</code> (x-large devices—screen
+          width equal to or greater than 1200 px)
+        </li>
+        <li>
+          <code class="w3-codespan">.col-xxl-</code> (xx-large devices—screen
+          width equal to or greater than 1400 px)
+        </li>
+      </ul>
+    </div>
+
+  <hr>
 
     <div class="row my-3">
       <div class="col bg-black text-light">100%</div>
@@ -34,39 +70,36 @@
     </div>
 
     <div class="row my-3">
-        <div class="col-sm-6 bg-primary text-white">50%</div>
-        <div class="col-sm-6 bg-dark text-white">50%</div>
+      <div class="col-sm-6 bg-primary text-white">50%</div>
+      <div class="col-sm-6 bg-dark text-white">50%</div>
     </div>
 
     <div class="row my-3">
-        <div class="col-3 bg-primary text-white">3 of 12</div>
-        <div class="col-9 bg-dark text-white">9 of 12</div>
+      <div class="col-3 bg-primary text-white">3 of 12</div>
+      <div class="col-9 bg-dark text-white">9 of 12</div>
     </div>
 
     <div class="row border my-5">
-
-        <div class="col-sm-4 bg-primary text-white">33.33%</div>
-        <div class="col-sm-4 bg-dark text-white">33.33%</div>
-        <div class="col-sm-4 bg-primary text-white">33.33%</div>
-
-        <h3 class="col ">Show This!</h3>
-        <h5 class="col d-none d-md-block">Show This on bigger screens (> medium)</h5>
-
+      <div class="col-sm-4 bg-primary text-white">33.33%</div>
+      <div class="col-sm-4 bg-dark text-white">33.33%</div>
+      <div class="col-sm-4 bg-primary text-white">33.33%</div>
     </div>
 
-  <div class="row">
-    <div class="col bg-primary text-white">25%</div>
-    <div class="col bg-dark text-white">25%</div>
-    <div class="col bg-primary text-white">25%</div>
-    <div class="col bg-dark text-white">25%</div>
-  </div>
+    <div class="row">
+      <div class="col bg-primary text-white">25%</div>
+      <div class="col bg-dark text-white">25%</div>
+      <div class="col bg-primary text-white">25%</div>
+      <div class="col bg-dark text-white">25%</div>
+    </div>
 
 
+    <!--https://getbootstrap.com/docs/5.3/utilities/display/#hiding-elements-->
 
-
-
-
-
-
+    <div class="container my-5">
+      <h5 class="">Always showing!</h5>
+      <h5 class="d-none d-md-block">
+        Show this on bigger screens (> medium)
+      </h5>
+    </div>
   </body>
 </html>
