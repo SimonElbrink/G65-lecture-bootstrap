@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Demo</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="container-fluid navbar navbar-expand-sm bg-dark navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Logo</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                >Dropdown</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Link</a></li>
+                <li><a class="dropdown-item" href="#">Another link</a></li>
+                <li><a class="dropdown-item" href="#">A third link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="bg-primary">
+      <h1>My first Bootstrap Page</h1>
+
+      <p class="m-0">
+        The .container-fluid class provides a full-width container, spanning the
+        entire width of the viewport.
+      </p>
+    </div>
+
+    <div class="container bg-secondary">
+      <h1>My First Bootstrap Page</h1>
+      <p>This part is inside a .container class.</p>
+      <p>The .container class provides a responsive fixed width container.</p>
+    </div>
+
+    <div class="container border border-3 border-primary">
+      <h2>Bootstrap Spacing Example</h2>
+
+      <div class="mt-1 bg-warning">
+        i only have a top margin of 4 px or 0.25rem
+      </div>
+
+      <div class="mt-5 bg-warning">
+        i only have a top margin of 48 px or 3rem
+      </div>
+
+      <div class="ms-4 border border-3 border-success">
+        i only have a top margin of 24 px or 1.5rem
+      </div>
+
+      <div class="pt-4 border border-3 border-success bg-warning">
+        Only add padding to top (1.5rem)
+      </div>
+
+      <div class="p-5 bg-success">i have padding in all sides (3rem)</div>
+
+      <div class="m-5 pb-5 bg-info">
+        I have margin an all sides (3rem) also padding on the bottom (3rem)
+      </div>
+    </div>
+
+    <div class="container mt-5 border border-5">
+      <h2>Contextual Colors</h2>
+      <p>Use the contextual classes to provide "meaning through colors":</p>
+      <p class="text-muted">This text is muted.</p>
+      <p class="text-primary">This text is important.</p>
+      <p class="text-success">This text indicates success.</p>
+      <p class="text-info">This text represents some information.</p>
+      <p class="text-warning">This text represents a warning.</p>
+      <p class="text-danger">This text represents danger.</p>
+      <p class="text-secondary">Secondary text.</p>
+      <p class="text-dark">This text is dark grey.</p>
+      <p class="text-body">Default body color (often black).</p>
+      <p class="text-light bg-dark">
+        This text is light grey (on white background).
+      </p>
+      <p class="text-white bg-dark">
+        This text is white (on white background).
+      </p>
+    </div>
+
+    <div class="container mt-5">
+      <h2>Basic Table</h2>
+      <table class="table table-dark table-hover table-bordered">
+        <thead>
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>john@example.com</td>
+          </tr>
+          <tr>
+            <td>Mary</td>
+            <td>Moe</td>
+            <td>mary@example.com</td>
+          </tr>
+          <tr>
+            <td>July</td>
+            <td>Dooley</td>
+            <td>july@example.com</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="container my-5">
+      <h2>Images</h2>
+
+      <img src="https://picsum.photos/150/150" class="img-thumbnail" />
+      <img src="https://picsum.photos/150/150" class="rounded" />
+      <img src="https://picsum.photos/150/150" class="rounded-circle" />
+    </div>
+
+    <div class="container my-3">
+      <h2>Button Styles</h2>
+      <button type="button" class="btn">Basic</button>
+      <button type="button" class="btn btn-primary">Primary</button>
+      <button type="button" class="btn btn-secondary">Secondary</button>
+      <button type="button" class="btn btn-success">Success</button>
+      <button type="button" class="btn btn-info">Info</button>
+      <button type="button" class="btn btn-warning">Warning</button>
+      <button type="button" class="btn btn-danger">Danger</button>
+      <button type="button" class="btn btn-dark">Dark</button>
+      <button type="button" class="btn btn-light">Light</button>
+      <button type="button" class="btn btn-link">Link</button>
+    </div>
+
+    <div class="container my-5">
+        <h2>Form</h2>
+      <form>
+        <div class="mb-3 mt-3">
+          <label for="email" class="form-label">Email:</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Enter email"
+            name="email"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="pwd" class="form-label">Password:</label>
+          <input
+            type="password"
+            class="form-control"
+            id="pwd"
+            placeholder="Enter password"
+            name="pswd"
+          />
+        </div>
+        <div class="form-check mb-3">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" name="remember" />
+            Remember me
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+
+  </body>
+</html>
